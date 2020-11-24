@@ -5,8 +5,10 @@
   --main-background-color: #fff;
   --herofooter-background-color: #2f303a;
   --team-background-color: #f5f4fa;
+  --white-color: #ffffff;
 }
 
+/* styles for index.html */
 body {
   color: var(--primary-text-color);
 }
@@ -33,10 +35,10 @@ a {
   background-color: var(--herofooter-background-color);
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--white-color);
 }
-.hero-button {
-  color: #fff;
+.hero .hero-button {
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 .about-title {
@@ -55,8 +57,26 @@ a {
   background-color: var(--herofooter-background-color);
 }
 .footer-studio {
-  color: #fff;
+  color: var(--white-color);
 }
 .footer-link {
-  color: #ffffff;
+  color: var(--white-color);
+}
+
+/* styles for portfolio.html */
+button[type='button'] {
+  color: var(--secondary-text-color);
+  background-color: var(--team-background-color);
+  border-color: transparent;
+}
+button[type='button']:hover,
+button[type='button']:focus {
+  color: var(--white-color: );
+  background-color: var(--accent-color);
+}
+.portfolio-title {
+  color: var(--secondary-text-color);
+}
+.portfolio-text {
+  color: var(--primary-text-color);
 }
