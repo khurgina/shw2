@@ -41,6 +41,10 @@ a {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.link.current {
+  color: var(--accent-color);
+}
+
 .hero {
   background-color: var(--herofooter-background-color);
 }
@@ -60,6 +64,13 @@ a {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .about-title,
 .team-title {
@@ -109,7 +120,7 @@ a {
 }
 
 /* styles for portfolio.html */
-button[type='button'] {
+.btn-portfolio {
   color: var(--secondary-text-color);
   background-color: var(--team-background-color);
   border-color: transparent;
@@ -117,8 +128,8 @@ button[type='button'] {
   font-size: 16px;
   line-height: 1.63;
 }
-button[type='button']:hover,
-button[type='button']:focus {
+.btn-portfolio:hover,
+.btn-portfolio:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
